@@ -10,6 +10,42 @@
 
 <body>
 
+  <form action="" class="container">
+    <h1 class="titulo"> Codificando Mensagens</h1>
+    <p>Escolha uma das opções para codificar uma mensagem</p>
+
+    <section class="escolha">
+
+      <select name="selecione" id="selecione">
+        <option value="metodo" disabled selected>Escolha sua opção</option>
+        <option value="caesar">Cifra de César</option>
+        <option value="base64">Base64</option>
+      </select>
+
+      <input class="ocultarIncremento" id="ocultarIncremento" type="number" placeholder="Selecionar passos:">
+      <div class="metodo">
+        <input checked type="radio" id="codificar" name="escolhaDeMetodo" value="codificar">
+        <label for="escolhaDeMetodo">Codificar</label>
+      </div>
+      <div class="metodo">
+        <input type="radio" id="decodificar" name="escolhaDeMetodo">
+        <label for="escolhaDeMetodo">Decodificar</label>
+      </div>
+    </section>
+
+    <section class="mensagem-usuario">
+      <textarea class="texto" id="escrever" name="texto-usuario" placeholder="Escreva sua mensagem..." rows="10" cols="33"></textarea>
+      <textarea class="texto" id="resultado" name="texto-usuario" placeholder="Sua mensagem codificada aqui..." rows="10" cols="33" readonly></textarea>
+    </section>
+
+    <button type="button" id="botao">Enviar</button>
+
+
+
+  </form>
+  <div>
+    <script src="./cifra.js"></script>
+  </div>
 </body>
 
 </html>
