@@ -1,0 +1,44 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Koulen&family=Raleway:ital,wght@1,100&family=Shadows+Into+Light&display=swap");
+
+body {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: aliceblue;
+}
+
+.container {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+  padding: 3rem;
+}
+
+.texto {
+  border: none;
+  background-color: aliceblue;
+  padding: 0.4rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#id {
+  background-color: #ec8f76;
+}
+.titulo,
+p {
+  font-family: "Koulen", cursive;
+  color: aliceblue;
+}
+
+#selecione {
+  background-color: aliceblue;
+}
+#ocultarIncremento {
+  background-color: aliceblue;
+}

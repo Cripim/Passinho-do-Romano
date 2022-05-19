@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./cifra.css">
   <title>Criptografando</title>
 </head>
 
@@ -12,9 +13,9 @@
 
   <form action="" class="container">
     <h1 class="titulo"> Codificando Mensagens</h1>
-    <p>Escolha uma das opções para codificar uma mensagem</p>
+    <p>Selecione um tipo de criptografia para codificar uma mensagem</p>
 
-    <section class="escolha">
+    <section>
 
       <select name="selecione" id="selecione">
         <option value="metodo" disabled selected>Escolha sua opção</option>
@@ -34,8 +35,8 @@
     </section>
 
     <section class="mensagem-usuario">
-      <textarea class="texto" id="escrever" name="texto-usuario" placeholder="Escreva sua mensagem..." rows="15" cols="35"></textarea>
-      <textarea class="texto" id="resultado" name="texto-usuario" placeholder="Sua mensagem codificada aqui..." rows="15" cols="35" readonly></textarea>
+      <textarea class="texto" id="escrever" name="texto-usuario" placeholder="Entrada de mensagem" rows="15" cols="35"></textarea>
+      <textarea class="texto" id="resultado" name="texto-usuario" placeholder="Saída de mensagem" rows="15" cols="35" readonly></textarea>
     </section>
 
     <button type="button" id="botao">Enviar</button>
